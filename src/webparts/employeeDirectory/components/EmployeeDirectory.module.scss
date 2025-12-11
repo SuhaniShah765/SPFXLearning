@@ -1,0 +1,199 @@
+/* ==========================================
+   EMPLOYEE DIRECTORY – Modern Premium UI
+=========================================== */
+
+.directoryWrapper {
+  padding: 26px;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ------------------------------------------------------
+   Top Bar
+------------------------------------------------------ */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.leftGroup {
+  flex: 1 1 auto;
+}
+
+/* Search Bar – Modernized */
+.searchBox {
+  width: 480px;
+  max-width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #dee0e3;
+  background: #fafbfc;
+  font-size: 15px;
+  transition: all 0.2s ease;
+
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.searchBox:focus {
+  background: #fff;
+  outline: none;
+  border-color: #0a66c2;
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.15);
+}
+
+.rightGroup {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Action Buttons */
+.actionBtn {
+  border: 1px solid #d7d7d7;
+  background: #ffffff;
+  padding: 9px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.18s ease;
+}
+
+.actionBtn:hover {
+  background: #e8f3ff;
+  border-color: #0a66c2;
+  color: #0a66c2;
+  transform: translateY(-2px);
+}
+
+/* Zoom control style */
+.zoomControl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #444;
+}
+
+/* ------------------------------------------------------
+   Alphabet Filter Row – Redesigned
+------------------------------------------------------ */
+.lettersRow {
+  margin: 14px 0 22px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.letterButton {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background: #f6f7f8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  font-size: 15px;
+  color: #333;
+  transition: all 0.18s ease;
+}
+
+.letterButton:hover {
+  transform: translateY(-3px);
+  background: #e8f3ff;
+  border-color: #0a66c2;
+}
+
+.active {
+  background: #0a66c2;
+  color: white;
+  border-color: #0a66c2;
+  box-shadow: 0 0 6px rgba(10, 102, 194, 0.4);
+}
+
+/* Icon for "All" */
+.peopleIcon {
+  font-size: 18px;
+  margin-right: 4px;
+  color: #ffffff !important;
+}
+
+/* ------------------------------------------------------
+   Filters Row
+------------------------------------------------------ */
+.filterRow {
+  margin-bottom: 22px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  background: #fafafa;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.select:hover {
+  border-color: #0a66c2;
+}
+
+.resetButton {
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.18s ease;
+}
+
+.resetButton:hover {
+  background: #feecec;
+  color: #c62828;
+  border-color: #c62828;
+}
+
+/* ------------------------------------------------------
+   Cards Grid
+------------------------------------------------------ */
+.cardGrid {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+
+  /* Smooth fade animation */
+  animation: fadeIn 0.4s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading UI */
+.loading {
+  padding: 24px;
+  font-size: 15px;
+  color: #666;
+}

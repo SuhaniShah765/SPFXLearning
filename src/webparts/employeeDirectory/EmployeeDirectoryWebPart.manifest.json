@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "00000000-0000-0000-0000-000000000000",
+  "alias": "EmployeeDirectoryWebPart",
+  "componentType": "WebPart",
+  "version": "1.0.0",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [
+    {
+      "title": { "default": "Employee Directory" },
+      "description": { "default": "Shows employee list" },
+      "officeFabricIconFontName": "People",
+      "properties": {
+        "listName": "Employee Directory"
+      }
+    }
+  ]
+}

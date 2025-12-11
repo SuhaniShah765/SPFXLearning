@@ -1,0 +1,185 @@
+/* ================================
+   EMPLOYEE CARD – Modern Premium UI
+   ================================ */
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.22s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+}
+
+/* ------------------------------------------------------
+   Banner
+------------------------------------------------------ */
+.banner {
+  height: 90px;
+  background: linear-gradient(135deg, #0078d4 0%, #0a66c2 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ------------------------------------------------------
+   Photo / Initials wrapper
+------------------------------------------------------ */
+.photoWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -48px;
+}
+
+.photo,
+.initials {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  background: #e2e4e7;
+  object-fit: cover;
+
+  box-shadow:
+    0px 4px 10px rgba(0, 0, 0, 0.12),
+    0px 0px 0px 3px rgba(255, 255, 255, 0.8);
+}
+
+.initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+/* ------------------------------------------------------
+   Presence Dot – Modern Glow Effect
+------------------------------------------------------ */
+.presenceDot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+
+  bottom: 10px;
+  right: calc(50% - 52px);
+  border: 3px solid #fff;
+
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+.presenceAvailable {
+  background: #2ecc71;
+  box-shadow:
+    0 0 4px rgba(46, 204, 113, 0.7),
+    0 0 8px rgba(46, 204, 113, 0.5);
+}
+
+.presenceBusy {
+  background: #ff3b30;
+  box-shadow:
+    0 0 4px rgba(255, 59, 48, 0.7),
+    0 0 8px rgba(255, 59, 48, 0.5);
+}
+
+.presenceAway {
+  background: #ffd60a;
+  box-shadow:
+    0 0 4px rgba(255, 214, 10, 0.8),
+    0 0 8px rgba(255, 214, 10, 0.5);
+}
+
+.presenceOffline {
+  background: #9b9b9b;
+  box-shadow:
+    0 0 4px rgba(155, 155, 155, 0.6),
+    0 0 8px rgba(155, 155, 155, 0.4);
+}
+
+/* ------------------------------------------------------
+   Content Area
+------------------------------------------------------ */
+.content {
+  padding: 18px 22px;
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 6px 0 4px;
+  color: #1d1d1d;
+}
+
+.job {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin-bottom: 4px;
+}
+
+.department {
+  font-size: 13px;
+  color: #0078d4;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.15s;
+
+  &:hover {
+    color: #0a66c2;
+  }
+}
+
+/* ------------------------------------------------------
+   Separator
+------------------------------------------------------ */
+.sep {
+  height: 1px;
+  width: 100%;
+  background: #ececec;
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------------
+   Footer Icon Row – Updated Modern Icons
+------------------------------------------------------ */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 14px 0 20px;
+}
+
+.iconBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: #f4f4f4;
+  border: 1px solid #e5e5e5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.18s ease;
+
+  font-size: 18px;
+  color: #444;
+
+  &:hover {
+    background: #e8f3ff;
+    border-color: #0078d4;
+    color: #0a66c2;
+    transform: translateY(-2px);
+  }
+}
